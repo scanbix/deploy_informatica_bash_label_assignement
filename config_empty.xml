@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+<infa_user><![CDATA[S1042A]]></infa_user>
+<infa_pass><![CDATA[XXXXXYYYYZZZ]]></infa_pass>
+<!-- Below this comment usually no changes -->
+<infa_usd><![CDATA[CORP1]]></infa_usd>
+<infa_domain><![CDATA[Domain_PC_DEV]]></infa_domain>
+<infa_rep><![CDATA[PC_SANDBOX_DEV]]></infa_rep>
+<workflow_list_file><![CDATA[input.csv]]></workflow_list_file>
+<label_regex><![CDATA[lab_SE_EDW_P6_\d\d\d\d_W\d\d\.\d+]]></label_regex>
+<label_comment><![CDATA[Some comment with JIRA ID]]></label_comment>
+</config>
