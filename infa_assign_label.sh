@@ -46,14 +46,16 @@ function get_latest_label() {
   echo proposed full label $proposed_label
 
   read -p "Do you accept proposed label: Y/N " VAR_INPUT
-
+  
+  shopt -s nocasematch
   if [[ ${VAR_INPUT,,} == "y" ]] ;then
          echo
          echo "The proposed label will be used"
   else
          read -p "Please enter new label: " proposed_label
   fi
-
+  shopt -u nocasematch
+  
   assign_label_variable $proposed_label
 
 }
