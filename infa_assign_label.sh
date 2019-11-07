@@ -62,6 +62,7 @@ function get_label() {
 
   read -p "Do you want reuse existing label: Y/N " VAR_INPUT
 
+  shopt -s nocasematch
   if [[ ${VAR_INPUT,,} == "y" ]] ;then
        echo
        echo "The provided label will be used"
@@ -72,6 +73,7 @@ function get_label() {
       get_latest_label
   fi
 
+  shopt -u nocasematch
 }
 
 # Assigns global variable to label name
