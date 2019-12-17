@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Function applies label to the workflow and all children objects.
 # As well it applies move label command.
 
